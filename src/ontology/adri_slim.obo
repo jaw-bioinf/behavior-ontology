@@ -1,0 +1,13 @@
+format-version: 1.2
+data-version: 2019-06-11
+ontology: pnbo
+
+[Term]
+id: NBO:0000564
+name: social behavior phenotype
+namespace: behavior_ontology
+def: "\"Observable characteristic of behavior that occurs predominantly or only, in individuals that are part of a group.\" [NBO:GVG]" []
+synonym: "pathological social behaviour" EXACT []
+property_value: http://purl.org/dc/elements/1.1/date 2011-04-14T08:24:37Z xsd:string
+created_by: George Gkoutos
+

@@ -22,8 +22,8 @@
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/nbo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/nbo/2018-05-11/nbo.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pnbo.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pnbo/2019-06-11/pnbo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/nbo/imports/chebi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/nbo/imports/go_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/nbo/imports/pato_import.owl"/>
@@ -140,10 +140,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002211 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002211"/>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002503 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002503"/>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/nbo#by_means -->
 
@@ -191,6 +204,7 @@
         <rdfs:label xml:lang="en">qualifier</rdfs:label>
     </owl:ObjectProperty>
     
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -9013,12 +9027,12 @@
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000380"/>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/nbo#qualifier"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002503"/>
                                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NBO_0000130"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/nbo#qualifier"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -9118,12 +9132,12 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000380"/>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/nbo#qualifier"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001333"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002503"/>
                                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NBO_0000130"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/nbo#qualifier"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001333"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -10412,7 +10426,7 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
     <!-- http://purl.obolibrary.org/obo/NBO_0000621 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000621">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000564"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
         <obo:IAO_0000115>&quot;A communication disorder in which a person, most often a child, who is normally capable of speech is unable to speak in given situations, or to specific people.&quot; [wikipedia:Selective_mutism]</obo:IAO_0000115>
         <dc:date>2011-04-14T05:06:03Z</dc:date>
         <oboInOwl:created_by>George Gkoutos</oboInOwl:created_by>
@@ -13843,12 +13857,12 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000381"/>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/nbo#qualifier"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002503"/>
                                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NBO_0000130"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/nbo#qualifier"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -15443,12 +15457,14 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
         <dc:contributor>http://orcid.org/0000-0002-3528-5267</dc:contributor>
         <dc:date>2020-02-05T20:14:32Z</dc:date>
         <oboInOwl:created_by>Sofia Robb</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inchworming</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inchworm-like locomotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inchworming</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>behavior_ontology</oboInOwl:hasOBONamespace>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inchworming behavior</rdfs:label>
     </owl:Class>
-   
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NBO_0050002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0050002">
@@ -15462,7 +15478,7 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
         <oboInOwl:hasOBONamespace>behavior_ontology</oboInOwl:hasOBONamespace>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circling behavior</rdfs:label>
     </owl:Class>
- 
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
@@ -15636,6 +15652,1014 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
     <!-- http://purl.obolibrary.org/obo/UBERON_0005725 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005725"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000612"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000564"/>
+        <obo:IAO_0000115>&quot; An observed social phenotype which participates in communication behavior - any manifestation of social communication between two individuals.&quot; [PNBO:JAW]</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <oboInOwl:created_by>John Williams</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">communication  behavior phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <obo:IAO_0000115>Loss of language skills at any point in human development after it was aquired. [PNBO:JAW
+]</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of language ability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000615"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">verbal communication phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">nonverbal communication phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_006">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NBO_0000612"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002301"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002"/>
+        <obo:IAO_0000115>Decreased level of communication ability, as measured by any metric, when compared to expected levels of communication ability. [PNBO:JAW]</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">decreased level of communication ability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003"/>
+        <obo:IAO_0000115>Loss of ability to create or use phrases of at least five words in length; a more specific entity than &apos;loss of language ability&apos;.[PNBO:JAW]</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of meaningful communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000565"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002"/>
+        <obo:IAO_0000115>Loss of the intent to communicate as subjectively viewed by others</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of communicative intent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of syntactical skills</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of articulation skills</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003"/>
+        <obo:IAO_0000115>loss of language skills brought about by physical illness.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of language from physical illness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000766"/>
+        <obo:IAO_0000115>loss of learned developmental skills for a sustained duration; for at least three months in the ADR-I. [PNBO:JAW]</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of learned skills</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000622"/>
+        <obo:IAO_0000115>Streotpyic behavior, repeatedly moving the hands toward the midline of the body or face.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">midline hand movements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000623"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000216"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002362"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Delayed development of echolalia in human infants; indicative of delayed laguage development.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">delayed echolalia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_015">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000075"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002362"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000564"/>
+        <obo:IAO_0000115>An abnormal frequency or duration of playing behavior; a decreased tendancy to engage in play</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">playing behavior phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_016">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000624"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002362"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_015"/>
+        <obo:IAO_0000115>Decreased tendany to engage in constructive play, using objects to create while playing</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">constructive playing behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000564"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">social engagement behavior phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <obo:IAO_0000115>Loss of skills involved in the development of activities of daily living as appropriate to developmental stage</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of self-help skills</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_003"/>
+        <obo:IAO_0000115>The loss of simple language comprehension (Q 29 ADI-R), not necessarily the use of simple language (see loss of meaningful communication).</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">loss of simple language comprehension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_005"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">bodily communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_020"/>
+        <obo:IAO_0000115>Using another&apos;s body to communicate.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">other body use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_038"/>
+        <obo:IAO_0000115>Lack of egagement in social verbalization; chatting. ADI-R (Q34)</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">social verbalization and response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <obo:IAO_0000115>ADI-R (Q35): Reciprocate Conversation within subject&apos;s level of language</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">reciprocal conversation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000595"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">abnormal gait</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <obo:IAO_0000115>adoption of neologisms and language idiosyncracies</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">neologism phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000644"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">head nodding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <obo:IAO_0000115>offering comfort and displaying empathy towards others</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">offering comort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000624"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002361"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>offering to share toys during object play</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">offering to share</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000622"/>
+        <obo:IAO_0000115>Child engages in complex stereotypic movement behavior</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">complex movement behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000766"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_005"/>
+        <obo:IAO_0000115>Child shows an increased level of skilled drawing behavior relative to developmental stage.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">skilled drawing behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">aggressive behavior phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_031"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">aggressive behavior towarads caregiver</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_031"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">aggressive behavior towards non-caregiver</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">delayed development of verbal communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000655"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">abnormal response to sensory stimuli</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000766"/>
+        <obo:IAO_0000115>Increase in level of computational/numerical ability relative to peers at developmental stage.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">computational ability phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">appropriate social response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_002"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">response to verbal communication phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_038"/>
+        <obo:IAO_0000115>Child responds to voice of relative or caregiver</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">response to voice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000243"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">restricted behavior phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">circumscribed interests</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000601"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <dc:date>2011-04-04T08:51:52Z</dc:date>
+        <oboInOwl:hasExactSynonym>hysteria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pathological anxiety disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>behavior_ontology</oboInOwl:hasOBONamespace>
+        <rdfs:label xml:lang="en">anxious behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_042"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">compusive behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_020"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">instrumental gesture behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_042"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">coping behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_045"/>
+        <obo:IAO_0000115>Difficulties in coping with changes in routines or personal environment.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">coping with changes in environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_020"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">eye contact behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">friendship maintenance behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000643"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">fainting behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_015"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">group play with peers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000644"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">head shaking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000622"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">hand and finger manerisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000643"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">hyperventilation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_015"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">imaginative play</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_015"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">imitative social play</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">inappropriate facial expressions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">inappropriate questions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">initiating social activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000566"/>
+        <obo:IAO_0000115>Lack of interest in, or ability to approach and engage, other children.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">interest in children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">verbal quality phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_060"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">intonation phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_060"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">rhythmic speech phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_060"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">rate of speech phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000766"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">musical ability phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_044"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">pointing to express interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_034"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">pronominal reversal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_004"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">abnormal quality of social overtures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_020"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">facial expressions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000766"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">reading ability phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000767"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">memory ability and skill phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000765"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">visiospatial ability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000567"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">repetative use of objects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_045"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">coping with changes in environment not affecting self</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">response to children initiating behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_028"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">offering to share enjoyment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_045"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">sejf-injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_005"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">smiling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <obo:IAO_0000115>Decreased frequency of directing the attention of others to objects of interst such as toys.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">directing attention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">social disinhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_037"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">social disinhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000658"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">sensitivity to noise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">attachment to objects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">unusual preoccupations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">unusual sensory interests</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000567"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_040"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">verbal rituals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pnbo.owl#PNBO_086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pnbo.owl#PNBO_017"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-0357-5454"/>
+        <rdfs:label xml:lang="en">spontaneous immitation of actions</rdfs:label>
+    </owl:Class>
     
 
 
@@ -15839,5 +16863,5 @@ owl:qualifier some &apos;temporally extended&apos;)</oboInOwl:note>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
